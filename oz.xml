@@ -92,6 +92,7 @@
                 <Detect2Chars attribute="Operator" context="#stay" char="&gt;" char1="=" />
                 <Detect2Chars attribute="Operator" context="#stay" char="=" char1="&lt;" />
                 <RegExpr attribute="Variable" context="#stay"   String="{\s*[A-Z](\w|\d)*" />
+                <RegExpr attribute="Variable" context="#stay"   String="{\s*(?=\$)" />
                 <DetectChar attribute="Variable" context="#stay"    char="}" />
                 <RegExpr attribute="Atom" context="#stay"       String="\b[a-z](\w|\d)*" />
                 <DetectChar attribute="String" context="string" char="&quot;" />
